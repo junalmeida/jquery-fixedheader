@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>jQuery FixedHeader</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="src/jquery.fixedheader.js"></script>
+    <style type="text/css">
+        body
+        {
+            font-family: Verdana, Arial, Helvetica;
+            font-size: 10px;
+            padding: 10px;
+            margin: 0px;
+        }
+        table.sample-table
+        {
+            border-collapse: separate;
+            width: 90%;
+            margin: 0px auto;
+            font-size: 1.3em;
+        }
+        table.sample-table td, table.sample-table th
+        {
+            border-right: dotted 1px #C9C9C9;
+            border-bottom: dotted 1px #C9C9C9;
+        }
+        table.sample-table td:nth-child(2), table.sample-table th:nth-child(2)
+        {
+            width: 15%;
+        }
+        table.sample-table td:nth-child(3), table.sample-table th:nth-child(3)
+        {
+            width: 30%;
+        }
+        .ui-clonetable
+        {
+            background-color: #FFFFFF;
+        }
+        .table-div
+        {
+            position: relative;
+            height: 400px;
+            overflow-y: auto;
+            border: solid 1px #C9C9C9;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $("table").fixedHeader();
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>
+            jQuery FixedHeader Demos</h1>
+        <p>
+            Documentation and changelog: <a href="http://junalmeida.wordpress.com/projetos/jquery-fixedheader"
+                target="_blank">Plugin Home Page</a></p>
+        <p>
+            Author: Marcos Almeida Junior</p>
+    </div>
+    <h2>
+        Simple Table on Body</h2>
+    <p>
+        Scroll to see it in action.
+    </p>
+    <p>
+        Resize your browser's window.
+    </p>
+    <table class="sample-table">
+        <thead>
+            <tr>
+                <th>
+                    Column A
+                </th>
+                <th>
+                    Small Column B
+                </th>
+                <th>
+                    Large Column C
+                </th>
+                <th>
+                    Column D
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Value A
+                </td>
+                <td>
+                    Value B
+                </td>
+                <td>
+                    Value C
+                </td>
+                <td>
+                    Value D
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <p>
+        End of the table. Keep scrooling.
+    </p>
+    <h2>
+        Simple Table on Div</h2>
+    <div class="table-div">
+        <p>
+            Scroll to see it in action.
+        </p>
+        <p>
+            Resize your browser's window.
+        </p>
+        <table class="sample-table">
+            <thead>
+                <tr>
+                    <th>
+                        Column A
+                    </th>
+                    <th>
+                        Small Column B
+                    </th>
+                    <th>
+                        Large Column C
+                    </th>
+                    <th>
+                        Column D
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Value A
+                    </td>
+                    <td>
+                        Value B
+                    </td>
+                    <td>
+                        Value C
+                    </td>
+                    <td>
+                        Value D
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+        <p>
+            End of the table. Keep scrooling.
+        </p>
+    </div>
+</body>
+</html>
