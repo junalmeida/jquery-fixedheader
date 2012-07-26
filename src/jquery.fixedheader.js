@@ -1,5 +1,6 @@
 /*
 * jQuery Plugin: Fix Table Headers
+* Version 1.0
 *
 * Copyright (c) 2012 Marcos Almeida Jr. (http://about.me/junalmeida)
 * Licensed jointly under the GPL and MIT licenses,
@@ -13,7 +14,8 @@
         classes:
         {
             cloneTable: "ui-clonetable"
-        }
+        },
+        bindTo: null
     };
 
     var methods = {
@@ -53,7 +55,9 @@
         table.after(newTable);
 
         var parentTag = table.offsetParent();
-        if (parentTag.get(0) == $("body").get(0)) {
+        if (settings.bindTo)
+            parentTag = $(settings.bindTo);
+        if (parentTag.get(0) == $("body").get(0) || parentTag.get(0) == window || parentTag.get(0) == document) {
             //lets bind to window scroll and resize
             $(window)
                 .bind("scroll" + settings.eventKey, ResizeAndScroll)
